@@ -2,7 +2,7 @@
 
 ¡Hola de nuevo! 👋
 
-En este desafío, nos enfrentamos a la validación de conocimientos sobre la manipulación del DOM y el uso de instrucciones `if`, `else if`, `else` y operadores lógicos. Resolvamos juntos los tres problemas propuestos.
+En este desafío, me enfrenté a la validación de conocimientos sobre la manipulación del DOM y el uso de instrucciones `if`, `else if`, `else` y operadores lógicos.
 
 ## Problema 1 - Borde a una Imagen 📷
 
