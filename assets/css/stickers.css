@@ -1,0 +1,103 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: 'main';
+    text-align: center;
+    font-size: 16px;
+    font-family: 'Open Sans', sans-serif;
+    align-items: center;
+    background-image: linear-gradient(0deg,
+            hsl(222deg 43% 10%) 0%,
+            hsl(222deg 41% 11%) 11%,
+            hsl(222deg 39% 12%) 22%,
+            hsl(223deg 37% 12%) 33%,
+            hsl(223deg 35% 13%) 44%,
+            hsl(224deg 34% 14%) 56%,
+            hsl(224deg 32% 14%) 67%,
+            hsl(224deg 31% 15%) 78%,
+            hsl(225deg 30% 16%) 89%,
+            hsl(225deg 29% 16%) 100%);
+}
+
+button {
+    all: unset;
+    outline: revert;
+}
+
+main {
+    grid-area: main;
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+}
+
+h1 {
+    font-family: 'Permanent Marker', sans-serif;
+    font-size: 4em;
+    color: white;
+    text-shadow: 6px 6px 0px rgba(0, 0, 0, 0.2);
+}
+
+main button {
+    width: fit-content;
+    align-self: center;
+    padding: .5em 2em;
+    border-radius: 1.5em;
+    background-color: #f8f9fa;
+    border-color: #f8f9fa;
+    cursor: pointer;
+    transition: 0.2s ease;
+    color: #000;
+}
+
+main button:hover {
+    background-color: #d3d4d5;
+    border-color: #c6c7c8;
+}
+
+.stickers-container ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2em;
+}
+
+.img-container {
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 10em;
+}
+
+.img-1 {
+    background-image: url('../img/sticker1.webp');
+}
+
+.img-2 {
+    background-image: url('../img/sticker2.webp');
+}
+
+
+.img-3 {
+    background-image: url('../img/sticker3.webp');
+}
+
+
+ul {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    list-style-type: none;
+}
+
+p {
+    color: white;
+    padding-top: 1em;
+}
