@@ -1,6 +1,4 @@
 // Password
-let body = document.querySelector('body')
-
 document.querySelector('button').addEventListener('click', function () {
     let value1 = Number(document.querySelector('#select1').value)
     let value2 = Number(document.querySelector('#select2').value)

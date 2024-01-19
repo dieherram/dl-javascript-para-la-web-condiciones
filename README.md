@@ -13,7 +13,7 @@ Para este desafío, construí una página con una única imagen. Al hacer clic e
 ### Código Destacado 🧩
 
 ```javascript
-flyer = document.querySelector('.flyer');
+let flyer = document.querySelector('.flyer');
 
 document.querySelector('.flyer').addEventListener('click', function () {
     if (flyer.style.border === "") {
@@ -34,10 +34,9 @@ En este desafío, construí una página web que permite pedir hasta 10 stickers 
 
 ```javascript
 document.querySelector('button').addEventListener('click', function () {
-    value1 = Number(document.querySelector('.input1').value)
-    value2 = Number(document.querySelector('.input2').value)
-    value3 = Number(document.querySelector('.input3').value)
-
+    let value1 = Number(document.querySelector('.input1').value)
+    let value2 = Number(document.querySelector('.input2').value)
+    let value3 = Number(document.querySelector('.input3').value)
     if (value1 < 0) {
         value1 = 0;
     }
@@ -50,7 +49,7 @@ document.querySelector('button').addEventListener('click', function () {
         value3 = 0;
     }
 
-    total = value1 + value2 + value3;
+    let total = value1 + value2 + value3;
 
     textStickers = document.querySelector('.text');
     if (total <= 10) {
@@ -70,12 +69,11 @@ En este último desafío, creé una página con tres selectores y opciones numé
 
 ```javascript
 document.querySelector('button').addEventListener('click', function () {
-    value1 = Number(document.querySelector('#select1').value)
-    value2 = Number(document.querySelector('#select2').value)
-    value3 = Number(document.querySelector('#select3').value)
-    textPassword = document.querySelector('p');
-
-    if (value1 === 9 && value2 === 9 && value3 === 1) {
+    let value1 = Number(document.querySelector('#select1').value)
+    let value2 = Number(document.querySelector('#select2').value)
+    let value3 = Number(document.querySelector('#select3').value)
+    let textPassword = document.querySelector('p');
+    if (value1 === 9 && value2 === 1 && value3 === 1) {
         textPassword.innerText = `Password 1 correcto`
     } else if (value1 === 7 && value2 === 1 && value3 === 4) {
         textPassword.innerText = `Password 2 correcto`
