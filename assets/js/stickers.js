@@ -1,8 +1,8 @@
 // Stickers
 document.querySelector('button').addEventListener('click', function () {
-    value1 = Number(document.querySelector('.input1').value)
-    value2 = Number(document.querySelector('.input2').value)
-    value3 = Number(document.querySelector('.input3').value)
+    let value1 = Number(document.querySelector('.input1').value)
+    let value2 = Number(document.querySelector('.input2').value)
+    let value3 = Number(document.querySelector('.input3').value)
     if (value1 < 0) {
         value1 = 0;
     }
@@ -15,7 +15,7 @@ document.querySelector('button').addEventListener('click', function () {
         value3 = 0;
     }
 
-    total = value1 + value2 + value3;
+    let total = value1 + value2 + value3;
 
     textStickers = document.querySelector('.text');
     if (total <= 10) {

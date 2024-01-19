@@ -1,5 +1,5 @@
 // Borde
-flyer = document.querySelector('.flyer');
+let flyer = document.querySelector('.flyer');
 
 document.querySelector('.flyer').addEventListener('click', function () {
     if (flyer.style.border === "") {
